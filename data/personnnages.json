@@ -1,0 +1,293 @@
+{
+    "personnages": [
+      {
+        "id": 1,
+        "nom": "Adam Warlock",
+        "role": "Soins",
+        "equipements": ["Bâton Quantique"],
+        "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques."
+      },
+      {
+        "id": 2,
+        "nom": "Black Panther",
+        "role": "Dégâts",
+        "equipements": ["Griffes en Vibranium", "Lance Dora Milaje"],
+        "description": "Le roi de Wakanda, rapide et mortel au combat rapproché avec ses griffes."
+      },
+      {
+        "id": 3,
+        "nom": "Black Widow",
+        "role": "Dégâts",
+        "equipements": ["Fusil de sniper", "Bâtons électriques"],
+        "description": "Une tireuse d’élite agile utilisant un grappin pour se déplacer et éliminer à distance."
+      },
+      {
+        "id": 4,
+        "nom": "Bruce Banner / Hulk",
+        "role": "Tank",
+        "equipements": ["Pistolet à rayons gamma (Banner)"],
+        "description": "Un tank transformable qui passe de Banner à Hulk pour écraser ses ennemis."
+      },
+      {
+        "id": 5,
+        "nom": "Captain America",
+        "role": "Tank",
+        "equipements": ["Bouclier"],
+        "description": "Un vanguard protecteur lançant son bouclier et absorbant les dégâts pour son équipe."
+      },
+      {
+        "id": 6,
+        "nom": "Cloak & Dagger",
+        "role": "Soins",
+        "equipements": ["Dagues de lumière (Dagger)"],
+        "description": "Un duo stratège qui soigne et contrôle avec lumière et ténèbres."
+      },
+      {
+        "id": 7,
+        "nom": "Doctor Strange",
+        "role": "Tank",
+        "equipements": ["Cape de Lévitation"],
+        "description": "Sorcier suprême utilisant portails et boucliers pour défendre et attaquer."
+      },
+      {
+        "id": 8,
+        "nom": "Groot",
+        "role": "Tank",
+        "equipements": [],
+        "description": "Un vanguard végétal créant des murs pour protéger ses alliés."
+      },
+      {
+        "id": 9,
+        "nom": "Hawkeye",
+        "role": "Dégâts",
+        "equipements": ["Arc et flèches"],
+        "description": "Un duelliste précis tirant des flèches spéciales à distance."
+      },
+      {
+        "id": 10,
+        "nom": "Hela",
+        "role": "Dégâts",
+        "equipements": ["Épées de Nastrond"],
+        "description": "Une stratège mortelle invoquant des corbeaux et ressuscitant ses alliés."
+      },
+      {
+        "id": 11,
+        "nom": "Human Torch",
+        "role": "Dégâts",
+        "equipements": [],
+        "description": "Un duelliste enflammé lançant des boules de feu et volant rapidement."
+      },
+      {
+        "id": 12,
+        "nom": "Invisible Woman",
+        "role": "Soins",
+        "equipements": [],
+        "description": "Une stratège créant des boucliers invisibles et contrôlant les ennemis."
+      },
+      {
+        "id": 13,
+        "nom": "Iron Fist",
+        "role": "Dégâts",
+        "equipements": [],
+        "description": "Un duelliste martial frappant avec le Poing d’Acier."
+      },
+      {
+        "id": 14,
+        "nom": "Iron Man",
+        "role": "Dégâts",
+        "equipements": ["Armure Mark VII"],
+        "description": "Un duelliste volant lançant rayons et missiles depuis son armure."
+      },
+      {
+        "id": 15,
+        "nom": "Jeff the Land Shark",
+        "role": "Soins",
+        "equipements": [],
+        "description": "Un stratège adorable qui crache de l’eau pour soigner et attaquer."
+      },
+      {
+        "id": 16,
+        "nom": "Loki",
+        "role": "Soins",
+        "equipements": ["Dague"],
+        "description": "Un stratège rusé utilisant illusions et téléportation pour aider son équipe."
+      },
+      {
+        "id": 17,
+        "nom": "Luna Snow",
+        "role": "Soins",
+        "equipements": [],
+        "description": "Une stratège glaciale qui soigne et gèle les ennemis avec ses pouvoirs."
+      },
+      {
+        "id": 18,
+        "nom": "Magik",
+        "role": "Dégâts",
+        "equipements": ["Soulsword"],
+        "description": "Une duelliste téléportée tranchant avec son épée démoniaque."
+      },
+      {
+        "id": 19,
+        "nom": "Magneto",
+        "role": "Tank",
+        "equipements": [],
+        "description": "Un vanguard manipulant le métal pour protéger et attaquer."
+      },
+      {
+        "id": 20,
+        "nom": "Mantis",
+        "role": "Soins",
+        "equipements": [],
+        "description": "Une stratège empathique soignant et endormant avec ses pouvoirs psychiques."
+      },
+      {
+        "id": 21,
+        "nom": "Mister Fantastic",
+        "role": "Dégâts",
+        "equipements": [],
+        "description": "Un duelliste élastique absorbant les dégâts et frappant de loin."
+      },
+      {
+        "id": 22,
+        "nom": "Moon Knight",
+        "role": "Dégâts",
+        "equipements": ["Croissants de lune"],
+        "description": "Un duelliste mobile lançant des projectiles en forme de lune."
+      },
+      {
+        "id": 23,
+        "nom": "Namor",
+        "role": "Dégâts",
+        "equipements": ["Trident"],
+        "description": "Un duelliste aquatique chargeant avec son trident et posant des tourelles."
+      },
+      {
+        "id": 24,
+        "nom": "Peni Parker",
+        "role": "Tank",
+        "equipements": ["SP//dr Mech"],
+        "description": "Un vanguard en mech utilisant des toiles pour contrôler le champ de bataille."
+      },
+      {
+        "id": 25,
+        "nom": "Psylocke",
+        "role": "Dégâts",
+        "equipements": ["Lame psychique"],
+        "description": "Une duelliste ninja tranchant avec une lame d’énergie psychique."
+      },
+      {
+        "id": 26,
+        "nom": "Punisher",
+        "role": "Dégâts",
+        "equipements": ["Fusil", "Tourelle"],
+        "description": "Un duelliste tirant à distance et posant des tourelles mortelles."
+      },
+      {
+        "id": 27,
+        "nom": "Rocket Raccoon",
+        "role": "Soins",
+        "equipements": ["Armes lourdes"],
+        "description": "Un stratège explosif soutenant avec gadgets et soins légers."
+      },
+      {
+        "id": 28,
+        "nom": "Scarlet Witch",
+        "role": "Dégâts",
+        "equipements": [],
+        "description": "Une duelliste lançant des sorts chaotiques dévastateurs."
+      },
+      {
+        "id": 29,
+        "nom": "Spider-Man",
+        "role": "Dégâts",
+        "equipements": ["Toiles"],
+        "description": "Un duelliste agile se balançant et piégeant avec ses toiles."
+      },
+      {
+        "id": 30,
+        "nom": "Squirrel Girl",
+        "role": "Dégâts",
+        "equipements": ["Lance-pierre"],
+        "description": "Une duelliste invoquant des écureuils et tirant avec un lance-pierre."
+      },
+      {
+        "id": 31,
+        "nom": "Star-Lord",
+        "role": "Dégâts",
+        "equipements": ["Pistolets élémentaux"],
+        "description": "Un duelliste volant tirant avec ses pistolets élémentaux."
+      },
+      {
+        "id": 32,
+        "nom": "Storm",
+        "role": "Dégâts",
+        "equipements": [],
+        "description": "Une duelliste contrôlant la météo pour attaquer et soutenir."
+      },
+      {
+        "id": 33,
+        "nom": "The Thing",
+        "role": "Tank",
+        "equipements": [],
+        "description": "Un vanguard robuste frappant fort et résistant aux coups."
+      },
+      {
+        "id": 34,
+        "nom": "Thor",
+        "role": "Tank",
+        "equipements": ["Mjolnir"],
+        "description": "Un vanguard lançant son marteau et des éclairs pour dominer."
+      },
+      {
+        "id": 35,
+        "nom": "Venom",
+        "role": "Tank",
+        "equipements": [],
+        "description": "Un vanguard symbiotique utilisant des tentacules pour contrôler."
+      },
+      {
+        "id": 36,
+        "nom": "Winter Soldier",
+        "role": "Dégâts",
+        "equipements": ["Bras cybernétique", "Pistolet"],
+        "description": "Un duelliste combinant tirs et coups avec son bras mécanique."
+      },
+      {
+        "id": 37,
+        "nom": "Wolverine",
+        "role": "Dégâts",
+        "equipements": ["Griffes en adamantium"],
+        "description": "Un duelliste régénérant tailladant avec ses griffes indestructibles."
+      }
+    ],
+    "equipements": [
+      {"id": 1, "nom": "Bâton Quantique", "type": "arme"},
+      {"id": 2, "nom": "Griffes en Vibranium", "type": "arme"},
+      {"id": 3, "nom": "Lance Dora Milaje", "type": "arme"},
+      {"id": 4, "nom": "Fusil de sniper", "type": "arme"},
+      {"id": 5, "nom": "Bâtons électriques", "type": "arme"},
+      {"id": 6, "nom": "Pistolet à rayons gamma", "type": "arme"},
+      {"id": 7, "nom": "Bouclier", "type": "défense"},
+      {"id": 8, "nom": "Dagues de lumière", "type": "arme"},
+      {"id": 9, "nom": "Cape de Lévitation", "type": "défense"},
+      {"id": 10, "nom": "Arc et flèches", "type": "arme"},
+      {"id": 11, "nom": "Épées de Nastrond", "type": "arme"},
+      {"id": 12, "nom": "Armure Mark VII", "type": "défense"},
+      {"id": 13, "nom": "Croissants de lune", "type": "arme"},
+      {"id": 14, "nom": "Trident", "type": "arme"},
+      {"id": 15, "nom": "SP//dr Mech", "type": "défense"},
+      {"id": 16, "nom": "Lame psychique", "type": "arme"},
+      {"id": 17, "nom": "Fusil", "type": "arme"},
+      {"id": 18, "nom": "Tourelle", "type": "arme"},
+      {"id": 19, "nom": "Armes lourdes", "type": "arme"},
+      {"id": 20, "nom": "Toiles", "type": "arme"},
+      {"id": 21, "nom": "Lance-pierre", "type": "arme"},
+      {"id": 22, "nom": "Pistolets élémentaux", "type": "arme"},
+      {"id": 23, "nom": "Mjolnir", "type": "arme"},
+      {"id": 24, "nom": "Bras cybernétique", "type": "arme"},
+      {"id": 25, "nom": "Pistolet", "type": "arme"},
+      {"id": 26, "nom": "Griffes en adamantium", "type": "arme"},
+      {"id": 27, "nom": "Soulsword", "type": "arme"},
+      {"id": 28, "nom": "Dague", "type": "arme"}
+    ]
+  }
