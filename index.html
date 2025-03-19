@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Page d’Accueil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <h1>Marvel Rivals</h1>
+            <div class="nav-links">
+                <a href="#home">Accueil</a> | <a href="#liste">Liste des Personnages</a> | <a href="#favoris">Mes Favoris</a>
+            </div>
+        </nav>
+        <main id="content"></main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.location.hash || window.location.hash === '#home') {
+                renderHome();
+            }
+        });
+    </script>
+</body>
+<footer>
+  <p>&copy; 2025 Marvel Rivals. Tous droits réservés.</p>
+  <p>Site inspiré par le jeu officiel Marvel Rivals.</p>
+</footer>
+</html>
