@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <nav>
-            <h1>Marvel Rivals</h1>
+            <img src="https://www.marvelrivals.com/pc/gw/20241128194803/img/logo_ad22b142.png" alt="Marvel Rivals Logo" class="nav-logo">
             <div class="nav-links">
                 <a href="#home">Accueil</a> | <a href="#liste">Liste des Personnages</a> | <a href="#favoris">Mes Favoris</a>
             </div>
@@ -18,16 +18,13 @@
         <main id="content"></main>
     </div>
     <script type="module" src="js/app.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (!window.location.hash || window.location.hash === '#home') {
-                renderHome();
-            }
-        });
-    </script>
 </body>
 <footer>
-  <p>&copy; 2025 Marvel Rivals. Tous droits réservés.</p>
-  <p>Site inspiré par le jeu officiel Marvel Rivals.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 Marvel Rivals. Tous droits réservés.</p>
 </footer>
 </html>
