@@ -124,6 +124,15 @@ li {
   text-align: center;
 }
 
+.card #nom {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e62429;
+  text-align: center;
+}
+
 .card p {
   padding: 0 15px 15px;
   font-size: 14px;
