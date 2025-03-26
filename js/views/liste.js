@@ -1,26 +1,32 @@
 import { Personnage } from '../provider.js';
 
 export function renderListe(content, page = 1) {
-  
   Personnage.fetchAll(page).then(personnages => {
   content.innerHTML = `
     <h2>Liste des Personnages</h2>
-    <input type="text" id="search" placeholder="Rechercher un personnage">
-    <div class="card-list" id="liste">
-    ${personnages.map(p => `
-      <a href="#detail/${p.id}">
-      <div class="card">
+<div class="filters">
+  <input type="text" id="search" placeholder="Rechercher un personnage">
+  <select id="roleFilter">
+    <option value="all">Tous les rôles</option>
+    <option value="Tank">Tank</option>
+    <option value="Dégâts">Dégâts</option>
+    <option value="Soins">Soins</option>
+  </select>
+  <button id="sortAlpha">Trier A-Z</button>
+</div>
+<div class="card-list" id="liste">
+  ${filteredPersonnages.map(p => `
+    <div class="card">
       <img loading="lazy" src="${p.image}" alt="${p.nom}">
-      <p id="nom"> ${p.nom}</p>
+      <a href="#detail/${p.id}">${p.nom}</a>
       <p>Rôle: ${p.role}</p>
-      </div>
-      </a>
-    `).join('')}
     </div>
-    <div class="pagination">
-    <button id="prev">Précédent</button>
-    <button id="next">Suivant</button>
-    </div>
+  `).join('')}
+</div>
+<div class="pagination">
+  <button id="prev">Précédent</button>
+  <button id="next">Suivant</button>
+</div>
   `;
   document.getElementById('prev').addEventListener('click', () => {
     if (page > 1) renderListe(content, page - 1);
@@ -28,18 +34,50 @@ export function renderListe(content, page = 1) {
   document.getElementById('next').addEventListener('click', () => {
     renderListe(content, page + 1);
   });
-  document.getElementById('search').addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    const filtered = personnages.filter(p => p.nom.toLowerCase().includes(query));
-    document.getElementById('liste').innerHTML = filtered.map(p => `
-    <a href="#detail/${p.id}">
+  
+
+    let filteredPersonnages = [...personnages];
+    let isSortedAsc = true;
+
+    function renderFilteredList() {
+      document.getElementById('liste').innerHTML = filteredPersonnages.map(p => `
+<a href="#detail/${p.id}">
     <div class="card">
       <img loading="lazy" src="${p.image}" alt="${p.nom}">
       <p id="nom"> ${p.nom}</p>
       <p>Rôle: ${p.role}</p>
     </div>
     </a>
-    `).join('');
-  });
+      `).join('');
+    }
+
+    
+
+    document.getElementById('search').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      filteredPersonnages = personnages.filter(p => p.nom.toLowerCase().includes(query));
+      renderFilteredList();
+    });
+
+    document.getElementById('roleFilter').addEventListener('change', (e) => {
+      const role = e.target.value;
+      if (role === 'all') {
+        filteredPersonnages = [...personnages];
+      } else {
+        filteredPersonnages = personnages.filter(p => p.role === role);
+      }
+      renderFilteredList();
+    });
+
+    document.getElementById('sortAlpha').addEventListener('click', () => {
+      if (isSortedAsc) {
+        filteredPersonnages.sort((a, b) => a.nom.localeCompare(b.nom));
+      } else {
+        filteredPersonnages.sort((a, b) => b.nom.localeCompare(a.nom));
+      }
+      isSortedAsc = !isSortedAsc;
+      renderFilteredList();
+    });
+
   });
 }

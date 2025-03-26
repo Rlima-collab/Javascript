@@ -7,52 +7,33 @@ const content = document.getElementById('content');
 function renderHome() {
     content.innerHTML = `
         <section id="home" class="home-page">
-            <header>
-                <h1>Marvel Rivals - The Super Hero Team-based PVP Shooter</h1>
-            </header>
-            <section id="seasons">
-                <h2>Saisons Actuelles</h2>
-                <p>Current Season: Season 0: DOOM'S RISE</p>
-                <p>Next Season: Season 1: Eternal Night Falls</p>
-            </section>
-            <section id="features">
-                <h2>Fonctionnalités Clés</h2>
-                <ul>
-                    <li>Combats en tant que Super Héros et Vilains dans des mondes du Multivers Marvel</li>
-                    <li>Nouvelles capacités d’équipe emblématiques</li>
-                    <li>Destruction environnementale dynamique des lieux Marvel célèbres</li>
-                    <li>Combats rapides 6v6</li>
-                </ul>
-            </section>
-            <section id="maps">
-                <h2>Cartes/Emplacements</h2>
-                <ul>
-                    <li>Empire of Eternal Night: Midtown, Sanctum Sanctorum</li>
-                    <li>Klyntar: Symbiotic Surface</li>
-                    <li>Hydra Charteris Base: Hell's Heaven</li>
-                    <li>Intergalactic Empire of Wakanda: Birnin T'Challa</li>
-                    <li>Tokyo 2099: Spider-Islands, Shin-Shibuya</li>
-                    <li>Yggsgard: Yggdrasill Path and Royal Palace</li>
-                </ul>
-            </section>
-            <section id="platforms">
-                <h2>Disponible sur</h2>
-                <a href="https://store.epicgames.com/p/marvel-rivals-182004" target="_blank">Windows (Epic Games)</a>
-                <a href="https://www.microsoft.com/store/productid/9n8pmw7qmd3d" target="_blank">Windows (Microsoft Store)</a>
-                <a href="https://store.playstation.com/en-us/concept/10010451/" target="_blank">PlayStation 5</a>
-            </section>
-            <section id="social">
-                <h2>Suivez-nous</h2>
-                <a href="https://twitter.com/MarvelRivals" target="_blank">X</a>
-                <a href="https://www.youtube.com/@MarvelRivals" target="_blank">YouTube</a>
-                <a href="https://discord.gg/marvelrivals" target="_blank">Discord</a>
-                <a href="https://www.instagram.com/marvelrivals/" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@marvelrivals" target="_blank">TikTok</a>
-                <a href="https://www.facebook.com/marvelrivals" target="_blank">Facebook</a>
-                <a href="https://www.twitch.tv/marvelrivals" target="_blank">Twitch</a>
-            </section>
+            <div class="video-and-description">
+                <div id="video-container">
+                    <div id="youtube-player"></div>
+                </div>
+                <div class="game-description">
+                    <h2>Bienvenue dans Marvel Rivals</h2>
+                    <p>Marvel Rivals est un jeu de combat en équipe où vous incarnez vos héros et vilains préférés de l'univers Marvel. Formez votre équipe, affrontez vos adversaires et dominez le champ de bataille avec des capacités uniques et des stratégies épiques.</p>
+                </div>
+            </div>
+            <div class="buy-section">
+                <div class="buy-text">
+                    <h3>Où acheter Marvel Rivals ?</h3>
+                    <p>Marvel Rivals est disponible sur les plateformes suivantes :</p>
+                    <ul>
+                        <li><a href="https://store.playstation.com" target="_blank">PlayStation Store</a></li>
+                        <li><a href="https://www.microsoft.com/store" target="_blank">Microsoft Store</a></li>
+                        <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
+                    </ul>
+                </div>
+                <div class="buy-image">
+                    <img src="https://i0.wp.com/www.larevuedgeek.fr/wp-content/uploads/2024/12/marvel-rivals-1ywtf-1.png" alt="Marvel Rivals">
+                </div>
+            </div>
         </section>
     `;
+
+    loadYouTubePlayer();
 }
 
 function router() {
@@ -67,6 +48,52 @@ function router() {
     } else if (hash === '#favoris') {
         renderFavoris(content);
     }
+}
+
+function loadYouTubePlayer() {
+    if (!window.YT || !window.YT.Player) {
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    window.onYouTubeIframeAPIReady = function () {
+        createYouTubePlayer();
+    };
+
+    if (window.YT && window.YT.Player) {
+        createYouTubePlayer();
+    }
+}
+
+function createYouTubePlayer() {
+    const existingPlayer = document.getElementById('youtube-player');
+    if (existingPlayer) {
+        existingPlayer.innerHTML = '';
+    }
+
+    new YT.Player('youtube-player', {
+        videoId: 'DA4iVv4MARE',
+        playerVars: {
+            autoplay: 1,
+            controls: 0,
+            showinfo: 0,
+            modestbranding: 1,
+            loop: 1,
+            fs: 0,
+            rel: 0,
+            start: 0,
+            end: 22,
+            mute: 1,
+            playlist: 'DA4iVv4MARE'
+        },
+        events: {
+            onReady: (event) => {
+                event.target.mute();
+            }
+        }
+    });
 }
 
 window.addEventListener('hashchange', router);

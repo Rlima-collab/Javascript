@@ -36,7 +36,6 @@ nav {
 nav h1 {
   font-size: 28px;
   color: #e62429;
-  margin: 0;
 }
 
 .nav-links a {
@@ -64,7 +63,6 @@ header h1 {
 
 header p {
   font-size: 1.2em;
-  margin: 0;
 }
 
 /* Sections */
@@ -77,15 +75,6 @@ h2 {
   font-size: 2em;
   color: #e62429;
   margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
 }
 
 /* Cards */
@@ -115,14 +104,16 @@ li {
   object-fit: cover;
 }
 
-.card a {
-  display: block;
+.card-content {
   padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #e62429;
-  text-align: center;
 }
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #e62429;
+}
+
 
 .card #nom {
   display: block;
@@ -135,70 +126,235 @@ li {
 
 .card p {
   padding: 0 15px 15px;
+
+.card-content p {
+
   font-size: 14px;
   color: #ccc;
 }
 
-/* Detail Section */
-.detail {
+/* Section vidéo et description */
+.video-and-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#video-container {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+#youtube-player {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.game-description {
+  flex: 1;
+  max-width: 50%;
+}
+
+.game-description h2 {
+  font-size: 24px;
+  color: #e62429;
+  margin-bottom: 10px;
+}
+
+.game-description p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Section achat */
+.buy-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
   background-color: #1a1a1a;
   border-radius: 8px;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.detail img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+.buy-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.buy-text h3 {
+  font-size: 20px;
+  color: #e62429;
+  margin-bottom: 10px;
+}
+
+.buy-text p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.buy-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.buy-text ul li {
+  margin: 5px 0;
+}
+
+.buy-text ul li a {
+  color: #e62429;
+  text-decoration: none;
+}
+
+.buy-text ul li a:hover {
+  text-decoration: underline;
+}
+
+.buy-image {
+  flex: 1;
+  max-width: 50%;
+  text-align: right;
+}
+
+.buy-image img {
+  max-width: 100%;
   border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.detail p {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.detail button {
-  padding: 10px 20px;
-  background-color: #e62429;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.detail button:hover {
-  background-color: #f44336;
 }
 
 /* Footer */
 footer {
-  background-color: #1a1a1a;
-  padding: 20px;
   text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
   color: #ccc;
-  font-size: 14px;
   border-top: 1px solid #333;
+}
+
+footer .social-media a {
+  color: #e62429;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2.5em;
+  .video-and-description {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .card-list {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-
-  .detail img {
+  #video-container,
+  .game-description {
     max-width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .buy-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buy-text,
+  .buy-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .buy-image img {
+    margin-top: 20px;
   }
 }
+
+.nav-logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.home-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 300px;
+}
+
+#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#search::placeholder {
+  color: #ccc;
+}
+
+#search:focus {
+  border-color: #e62429;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filters input::placeholder {
+  color: #ccc;
+}
+
+.filters input:focus,
+.filters select:focus,
+.filters button:focus {
+  border-color: #e62429;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filters button {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e62429;
+  color: #ffffff;
+}
+
