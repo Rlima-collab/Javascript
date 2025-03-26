@@ -272,3 +272,75 @@ footer .social-media a:hover {
   margin: 0 auto 20px;
   max-width: 300px;
 }
+
+#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#search::placeholder {
+  color: #ccc;
+}
+
+#search:focus {
+  border-color: #e62429;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filters input::placeholder {
+  color: #ccc;
+}
+
+.filters input:focus,
+.filters select:focus,
+.filters button:focus {
+  border-color: #e62429;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filters button {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e62429;
+  color: #ffffff;
+}
+
