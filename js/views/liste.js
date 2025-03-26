@@ -2,41 +2,56 @@ import { Personnage } from '../provider.js';
 
 export function renderListe(content, page = 1) {
   Personnage.fetchAll(page).then(personnages => {
+  content.innerHTML = `
+    <h2>Liste des Personnages</h2>
+<div class="filters">
+  <input type="text" id="search" placeholder="Rechercher un personnage">
+  <select id="roleFilter">
+    <option value="all">Tous les rôles</option>
+    <option value="Tank">Tank</option>
+    <option value="Dégâts">Dégâts</option>
+    <option value="Soins">Soins</option>
+  </select>
+  <button id="sortAlpha">Trier A-Z</button>
+</div>
+<div class="card-list" id="liste">
+  ${filteredPersonnages.map(p => `
+    <div class="card">
+      <img loading="lazy" src="${p.image}" alt="${p.nom}">
+      <a href="#detail/${p.id}">${p.nom}</a>
+      <p>Rôle: ${p.role}</p>
+    </div>
+  `).join('')}
+</div>
+<div class="pagination">
+  <button id="prev">Précédent</button>
+  <button id="next">Suivant</button>
+</div>
+  `;
+  document.getElementById('prev').addEventListener('click', () => {
+    if (page > 1) renderListe(content, page - 1);
+  });
+  document.getElementById('next').addEventListener('click', () => {
+    renderListe(content, page + 1);
+  });
+  
+
     let filteredPersonnages = [...personnages];
     let isSortedAsc = true;
 
     function renderFilteredList() {
       document.getElementById('liste').innerHTML = filteredPersonnages.map(p => `
-        <div class="card">
-          <img loading="lazy" src="${p.image}" alt="${p.nom}">
-          <a href="#detail/${p.id}">${p.nom}</a>
-          <p>Rôle: ${p.role}</p>
-        </div>
+<a href="#detail/${p.id}">
+    <div class="card">
+      <img loading="lazy" src="${p.image}" alt="${p.nom}">
+      <p id="nom"> ${p.nom}</p>
+      <p>Rôle: ${p.role}</p>
+    </div>
+    </a>
       `).join('');
     }
 
-    content.innerHTML = `
-      <h2>Liste des Personnages</h2>
-      <div class="filters">
-        <input type="text" id="search" placeholder="Rechercher un personnage">
-        <select id="roleFilter">
-          <option value="all">Tous les rôles</option>
-          <option value="Tank">Tank</option>
-          <option value="Dégâts">Dégâts</option>
-          <option value="Soins">Soins</option>
-        </select>
-        <button id="sortAlpha">Trier A-Z</button>
-      </div>
-      <div class="card-list" id="liste">
-        ${filteredPersonnages.map(p => `
-          <div class="card">
-            <img loading="lazy" src="${p.image}" alt="${p.nom}">
-            <a href="#detail/${p.id}">${p.nom}</a>
-            <p>Rôle: ${p.role}</p>
-          </div>
-        `).join('')}
-      </div>
-    `;
+    
 
     document.getElementById('search').addEventListener('input', (e) => {
       const query = e.target.value.toLowerCase();
@@ -63,5 +78,6 @@ export function renderListe(content, page = 1) {
       isSortedAsc = !isSortedAsc;
       renderFilteredList();
     });
+
   });
 }
