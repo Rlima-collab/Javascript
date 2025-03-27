@@ -39,8 +39,9 @@ export function renderDetail(content, id) {
         <input type="number" id="newNote" min="0" max="5" value="${p.note}">
         <button id="save">Noter</button>
         <button id="fav">${isFav ? 'Retirer des favoris' : 'Ajouter aux favoris'}</button>
-        <br>
-        <a href="#liste">Retour à la liste</a>
+        <div class="detail-footer">
+          <a href="#liste">Retour à la liste</a>
+        </div>
       </div>
     `;
 
