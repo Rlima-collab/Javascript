@@ -7,11 +7,13 @@ export function renderListe(content, page = 1) {
 
     function renderFilteredList() {
       document.getElementById('liste').innerHTML = filteredPersonnages.map(p => `
-        <div class="card">
-          <img loading="lazy" src="${p.image}" alt="${p.nom}">
-          <a href="#detail/${p.id}">${p.nom}</a>
-          <p>Rôle: ${p.role}</p>
-        </div>
+        <a href="#detail/${p.id}">
+    <div class="card">
+      <img loading="lazy" src="${p.image}" alt="${p.nom}">
+      <p id="nom"> ${p.nom}</p>
+      <p>Rôle: ${p.role}</p>
+    </div>
+    </a>
       `).join('');
     }
 
@@ -29,13 +31,18 @@ export function renderListe(content, page = 1) {
       </div>
       <div class="card-list" id="liste">
         ${filteredPersonnages.map(p => `
-          <div class="card">
-            <img loading="lazy" src="${p.image}" alt="${p.nom}">
-            <a href="#detail/${p.id}">${p.nom}</a>
-            <p>Rôle: ${p.role}</p>
-          </div>
+          <a href="#detail/${p.id}">
+    <div class="card">
+      <img loading="lazy" src="${p.image}" alt="${p.nom}">
+      <p id="nom"> ${p.nom}</p>
+      <p>Rôle: ${p.role}</p>
+    </div>
+    </a>
         `).join('')}
       </div>
+      <div class="pagination">
+ 
+</div>
     `;
 
     document.getElementById('search').addEventListener('input', (e) => {

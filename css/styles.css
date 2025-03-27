@@ -114,9 +114,18 @@ h2 {
   color: #e62429;
 }
 
-.card-content p {
+.card p {
   font-size: 14px;
   color: #ccc;
+}
+
+.card #nom {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e62429;
+  text-align: center;
 }
 
 /* Section vidéo et description */
