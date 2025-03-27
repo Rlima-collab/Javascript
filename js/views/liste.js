@@ -1,10 +1,9 @@
 import { Personnage } from '../provider.js';
 
-export function renderListe(content, page = 1) {
-  Personnage.fetchAll(page).then(personnages => {
-    let filteredPersonnages = [...personnages];
-    let isSortedAsc = true;
-
+export function renderListe(content) {
+    Personnage.fetchAll().then(personnages => {
+        let filteredPersonnages = [...personnages];
+        let isSortedAsc = true;
     function renderFilteredList() {
       document.getElementById('liste').innerHTML = filteredPersonnages.map(p => `
         <a href="#detail/${p.id}">
@@ -44,31 +43,30 @@ export function renderListe(content, page = 1) {
  
 </div>
     `;
+        document.getElementById('search').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            filteredPersonnages = personnages.filter(p => p.nom.toLowerCase().includes(query));
+            renderFilteredList();
+        });
 
-    document.getElementById('search').addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase();
-      filteredPersonnages = personnages.filter(p => p.nom.toLowerCase().includes(query));
-      renderFilteredList();
-    });
+        document.getElementById('roleFilter').addEventListener('change', (e) => {
+            const role = e.target.value;
+            if (role === 'all') {
+                filteredPersonnages = [...personnages];
+            } else {
+                filteredPersonnages = personnages.filter(p => p.role === role);
+            }
+            renderFilteredList();
+        });
 
-    document.getElementById('roleFilter').addEventListener('change', (e) => {
-      const role = e.target.value;
-      if (role === 'all') {
-        filteredPersonnages = [...personnages];
-      } else {
-        filteredPersonnages = personnages.filter(p => p.role === role);
-      }
-      renderFilteredList();
+        document.getElementById('sortAlpha').addEventListener('click', () => {
+            if (isSortedAsc) {
+                filteredPersonnages.sort((a, b) => a.nom.localeCompare(b.nom));
+            } else {
+                filteredPersonnages.sort((a, b) => b.nom.localeCompare(a.nom));
+            }
+            isSortedAsc = !isSortedAsc;
+            renderFilteredList();
+        });
     });
-
-    document.getElementById('sortAlpha').addEventListener('click', () => {
-      if (isSortedAsc) {
-        filteredPersonnages.sort((a, b) => a.nom.localeCompare(b.nom));
-      } else {
-        filteredPersonnages.sort((a, b) => b.nom.localeCompare(a.nom));
-      }
-      isSortedAsc = !isSortedAsc;
-      renderFilteredList();
-    });
-  });
 }
