@@ -154,6 +154,11 @@ section {
   outline: none;
   transition: border-color 0.3s ease;
 }
+.card p {
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
 
 .filters input::placeholder {
   color: #ccc;
@@ -173,6 +178,15 @@ section {
 .filters button:hover {
   background-color: #e62429;
   color: #ffffff;
+}
+
+.card #nom {
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e62429;
+  text-align: center;
 }
 
 .video-and-description {
