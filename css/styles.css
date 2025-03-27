@@ -114,6 +114,10 @@ h2 {
   color: #e62429;
 }
 
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
 
 .card #nom {
   display: block;
@@ -122,15 +126,6 @@ h2 {
   font-weight: bold;
   color: #e62429;
   text-align: center;
-}
-
-.card p {
-  padding: 0 15px 15px;
-
-.card-content p {
-
-  font-size: 14px;
-  color: #ccc;
 }
 
 /* Section vidéo et description */
