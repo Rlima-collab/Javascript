@@ -44,11 +44,26 @@ export function renderDetail(content, id) {
       </div>
     `;
 
-    document.getElementById('save').addEventListener('click', () => {
-      const note = document.getElementById('newNote').value;
+    const saveNote = () => {
+      let note = document.getElementById('newNote').value;
+      if (note > 5) {
+      note = 5;
+      } else if (note < 0) {
+      note = 0;
+      }
+      console.log('Nouvelle note:', note);
       Personnage.updateNote(id, note).then(() => {
-        document.getElementById('note').textContent = note;
+      document.getElementById('note').textContent = note;
+      document.getElementById('newNote').value = '';
       });
+    };
+
+    document.getElementById('save').addEventListener('click', saveNote);
+
+    document.getElementById('newNote').addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+      saveNote();
+      }
     });
 
     document.getElementById('fav').addEventListener('click', () => {
