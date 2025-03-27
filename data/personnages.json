@@ -32,7 +32,7 @@
         5
       ],
       "description": "Une tireuse d’élite agile utilisant un grappin pour se déplacer et éliminer à distance.",
-      "note": 5,
+      "note": 0,
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/c/c8/Black_Widow_DEFAULT_Table_Icon.png"
     },
     {
@@ -43,7 +43,7 @@
         6
       ],
       "description": "Un tank transformable qui passe de Banner à Hulk pour écraser ses ennemis.",
-      "note": "1",
+      "note": 0,
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/5f/Hulk_DEFAULT_Table_Icon.png"
     },
     {
@@ -388,142 +388,142 @@
   ],
   "equipements": [
     {
-      "id": "1",
+      "id": 1,
       "nom": "Bâton Quantique",
       "type": "arme"
     },
     {
-      "id": "2",
+      "id": 2,
       "nom": "Griffes en Vibranium",
       "type": "arme"
     },
     {
-      "id": "3",
+      "id": 3,
       "nom": "Lance Dora Milaje",
       "type": "arme"
     },
     {
-      "id": "4",
+      "id": 4,
       "nom": "Fusil de sniper",
       "type": "arme"
     },
     {
-      "id": "5",
+      "id": 5,
       "nom": "Bâtons électriques",
       "type": "arme"
     },
     {
-      "id": "6",
+      "id": 6,
       "nom": "Pistolet à rayons gamma",
       "type": "arme"
     },
     {
-      "id": "7",
+      "id": 7,
       "nom": "Bouclier",
       "type": "défense"
     },
     {
-      "id": "8",
+      "id": 8,
       "nom": "Dagues de lumière",
       "type": "arme"
     },
     {
-      "id": "9",
+      "id": 9,
       "nom": "Cape de Lévitation",
       "type": "défense"
     },
     {
-      "id": "10",
+      "id": 10,
       "nom": "Arc et flèches",
       "type": "arme"
     },
     {
-      "id": "11",
+      "id": 11,
       "nom": "Épées de Nastrond",
       "type": "arme"
     },
     {
-      "id": "12",
+      "id": 12,
       "nom": "Armure Mark VII",
       "type": "défense"
     },
     {
-      "id": "13",
+      "id": 13,
       "nom": "Croissants de lune",
       "type": "arme"
     },
     {
-      "id": "14",
+      "id": 14,
       "nom": "Trident",
       "type": "arme"
     },
     {
-      "id": "15",
+      "id": 15,
       "nom": "SP//dr Mech",
       "type": "défense"
     },
     {
-      "id": "16",
+      "id": 16,
       "nom": "Lame psychique",
       "type": "arme"
     },
     {
-      "id": "17",
+      "id": 17,
       "nom": "Fusil",
       "type": "arme"
     },
     {
-      "id": "18",
+      "id": 18,
       "nom": "Tourelle",
       "type": "arme"
     },
     {
-      "id": "19",
+      "id": 19,
       "nom": "Armes lourdes",
       "type": "arme"
     },
     {
-      "id": "20",
+      "id": 20,
       "nom": "Toiles",
       "type": "arme"
     },
     {
-      "id": "21",
+      "id": 21,
       "nom": "Lance-pierre",
       "type": "arme"
     },
     {
-      "id": "22",
+      "id": 22,
       "nom": "Pistolets élémentaux",
       "type": "arme"
     },
     {
-      "id": "23",
+      "id": 23,
       "nom": "Mjolnir",
       "type": "arme"
     },
     {
-      "id": "24",
+      "id": 24,
       "nom": "Bras cybernétique",
       "type": "arme"
     },
     {
-      "id": "25",
+      "id": 25,
       "nom": "Pistolet",
       "type": "arme"
     },
     {
-      "id": "26",
+      "id": 26,
       "nom": "Griffes en adamantium",
       "type": "arme"
     },
     {
-      "id": "27",
+      "id": 27,
       "nom": "Soulsword",
       "type": "arme"
     },
     {
-      "id": "28",
+      "id": 28,
       "nom": "Dague",
       "type": "arme"
     }
