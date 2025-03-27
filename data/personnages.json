@@ -116,7 +116,7 @@
       "role": "Dégâts",
       "equipements": [],
       "description": "Un duelliste enflammé lançant des boules de feu et volant rapidement.",
-      "note": 4,
+      "note": 0,
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/f/f3/Human_Torch_DEFAULT_Table_Icon.png"
     },
     {
@@ -142,7 +142,7 @@
       "nom": "Iron Man",
       "role": "Dégâts",
       "equipements": [
-      12
+        12
       ],
       "description": "Un duelliste volant lançant rayons et missiles depuis son armure.",
       "note": 0,
@@ -162,7 +162,7 @@
       "nom": "Loki",
       "role": "Soins",
       "equipements": [
-      28
+        28
       ],
       "description": "Un stratège rusé utilisant illusions et téléportation pour aider son équipe.",
       "note": 0,
@@ -182,7 +182,7 @@
       "nom": "Magik",
       "role": "Dégâts",
       "equipements": [
-      27
+        27
       ],
       "description": "Une duelliste téléportée tranchant avec son épée démoniaque.",
       "note": 0,
@@ -220,7 +220,7 @@
       "nom": "Moon Knight",
       "role": "Dégâts",
       "equipements": [
-      13
+        13
       ],
       "description": "Un duelliste mobile lançant des projectiles en forme de lune.",
       "note": 0,
@@ -231,7 +231,7 @@
       "nom": "Namor",
       "role": "Dégâts",
       "equipements": [
-      14
+        14
       ],
       "description": "Un duelliste aquatique chargeant avec son trident et posant des tourelles.",
       "note": 0,
@@ -242,7 +242,7 @@
       "nom": "Peni Parker",
       "role": "Tank",
       "equipements": [
-      15
+        15
       ],
       "description": "Un vanguard en mech utilisant des toiles pour contrôler le champ de bataille.",
       "note": 0,
@@ -253,7 +253,7 @@
       "nom": "Psylocke",
       "role": "Dégâts",
       "equipements": [
-      16
+        16
       ],
       "description": "Une duelliste ninja tranchant avec une lame d’énergie psychique.",
       "note": 0,
@@ -264,8 +264,8 @@
       "nom": "Punisher",
       "role": "Dégâts",
       "equipements": [
-      17,
-      18
+        17,
+        18
       ],
       "description": "Un duelliste tirant à distance et posant des tourelles mortelles.",
       "note": 0,
@@ -276,7 +276,7 @@
       "nom": "Rocket Raccoon",
       "role": "Soins",
       "equipements": [
-      19
+        19
       ],
       "description": "Un stratège explosif soutenant avec gadgets et soins légers.",
       "note": 0,
@@ -296,7 +296,7 @@
       "nom": "Spider-Man",
       "role": "Dégâts",
       "equipements": [
-      20
+        20
       ],
       "description": "Un duelliste agile se balançant et piégeant avec ses toiles.",
       "note": 0,
@@ -307,7 +307,7 @@
       "nom": "Squirrel Girl",
       "role": "Dégâts",
       "equipements": [
-      21
+        21
       ],
       "description": "Une duelliste invoquant des écureuils et tirant avec un lance-pierre.",
       "note": 0,
@@ -318,7 +318,7 @@
       "nom": "Star-Lord",
       "role": "Dégâts",
       "equipements": [
-      22
+        22
       ],
       "description": "Un duelliste volant tirant avec ses pistolets élémentaux.",
       "note": 0,
@@ -347,10 +347,10 @@
       "nom": "Thor",
       "role": "Tank",
       "equipements": [
-      23
+        23
       ],
       "description": "Un vanguard lançant son marteau et des éclairs pour dominer.",
-      "note": 0,
+      "note": "4",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/88/Thor_DEFAULT_Table_Icon.png"
     },
     {
@@ -367,8 +367,8 @@
       "nom": "Winter Soldier",
       "role": "Dégâts",
       "equipements": [
-      24,
-      25
+        24,
+        25
       ],
       "description": "Un duelliste combinant tirs et coups avec son bras mécanique.",
       "note": 0,
@@ -379,150 +379,151 @@
       "nom": "Wolverine",
       "role": "Dégâts",
       "equipements": [
-      26
+        26
       ],
       "description": "Un duelliste régénérant tailladant avec ses griffes indestructibles.",
       "note": 0,
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Wolverine_DEFAULT_Table_Icon.png"
-    }],
+    }
+  ],
   "equipements": [
     {
-      "id": 1,
+      "id": "1",
       "nom": "Bâton Quantique",
       "type": "arme"
     },
     {
-      "id": 2,
+      "id": "2",
       "nom": "Griffes en Vibranium",
       "type": "arme"
     },
     {
-      "id": 3,
+      "id": "3",
       "nom": "Lance Dora Milaje",
       "type": "arme"
     },
     {
-      "id": 4,
+      "id": "4",
       "nom": "Fusil de sniper",
       "type": "arme"
     },
     {
-      "id": 5,
+      "id": "5",
       "nom": "Bâtons électriques",
       "type": "arme"
     },
     {
-      "id": 6,
+      "id": "6",
       "nom": "Pistolet à rayons gamma",
       "type": "arme"
     },
     {
-      "id": 7,
+      "id": "7",
       "nom": "Bouclier",
       "type": "défense"
     },
     {
-      "id": 8,
+      "id": "8",
       "nom": "Dagues de lumière",
       "type": "arme"
     },
     {
-      "id": 9,
+      "id": "9",
       "nom": "Cape de Lévitation",
       "type": "défense"
     },
     {
-      "id": 10,
+      "id": "10",
       "nom": "Arc et flèches",
       "type": "arme"
     },
     {
-      "id": 11,
+      "id": "11",
       "nom": "Épées de Nastrond",
       "type": "arme"
     },
     {
-      "id": 12,
+      "id": "12",
       "nom": "Armure Mark VII",
       "type": "défense"
     },
     {
-      "id": 13,
+      "id": "13",
       "nom": "Croissants de lune",
       "type": "arme"
     },
     {
-      "id": 14,
+      "id": "14",
       "nom": "Trident",
       "type": "arme"
     },
     {
-      "id": 15,
+      "id": "15",
       "nom": "SP//dr Mech",
       "type": "défense"
     },
     {
-      "id": 16,
+      "id": "16",
       "nom": "Lame psychique",
       "type": "arme"
     },
     {
-      "id": 17,
+      "id": "17",
       "nom": "Fusil",
       "type": "arme"
     },
     {
-      "id": 18,
+      "id": "18",
       "nom": "Tourelle",
       "type": "arme"
     },
     {
-      "id": 19,
+      "id": "19",
       "nom": "Armes lourdes",
       "type": "arme"
     },
     {
-      "id": 20,
+      "id": "20",
       "nom": "Toiles",
       "type": "arme"
     },
     {
-      "id": 21,
+      "id": "21",
       "nom": "Lance-pierre",
       "type": "arme"
     },
     {
-      "id": 22,
+      "id": "22",
       "nom": "Pistolets élémentaux",
       "type": "arme"
     },
     {
-      "id": 23,
+      "id": "23",
       "nom": "Mjolnir",
       "type": "arme"
     },
     {
-      "id": 24,
+      "id": "24",
       "nom": "Bras cybernétique",
       "type": "arme"
     },
     {
-      "id": 25,
+      "id": "25",
       "nom": "Pistolet",
       "type": "arme"
     },
     {
-      "id": 26,
+      "id": "26",
       "nom": "Griffes en adamantium",
       "type": "arme"
     },
     {
-      "id": 27,
+      "id": "27",
       "nom": "Soulsword",
       "type": "arme"
     },
     {
-      "id": 28,
+      "id": "28",
       "nom": "Dague",
       "type": "arme"
     }
