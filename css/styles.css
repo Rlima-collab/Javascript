@@ -592,3 +592,38 @@ img {
   display: flex;
   flex-direction: column;
 }
+.classement-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.classement-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.classement-table th, .classement-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.classement-table th {
+  background-color: #1a1a1a;
+  color: #e62429;
+  font-weight: bold;
+}
+
+.classement-table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.classement-table tr:nth-child(odd) {
+  background-color: #0d0d0d;
+}
+
+.classement-table td {
+  color: #ccc;
+}
