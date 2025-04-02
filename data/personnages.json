@@ -4,24 +4,25 @@
       "id": "1",
       "nom": "Adam Warlock",
       "role": "Soins",
-      "equipements": [
-        1
-      ],
+      "equipements": [],
       "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques.",
-      "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png"
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png",
+      "note": 5,
+      "points": 0
     },
     {
       "id": "2",
       "nom": "Black Panther",
       "role": "Dégâts",
       "equipements": [
+        1,
         2,
         3
       ],
       "description": "Le roi de Wakanda, rapide et mortel au combat rapproché avec ses griffes.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/ba/Black_Panther_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/ba/Black_Panther_DEFAULT_Table_Icon.png"
+      "points": 3
     },
     {
       "id": "3",
@@ -368,22 +369,22 @@
       "role": "Dégâts",
       "equipements": [
         24,
-        25
-      ],
-      "description": "Un duelliste combinant tirs et coups avec son bras mécanique.",
-      "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/26/Winter_Soldier_DEFAULT_Table_Icon.png"
-    },
-    {
-      "id": "37",
-      "nom": "Wolverine",
-      "role": "Dégâts",
-      "equipements": [
+        25,
         26
       ],
+      "description": "Un duelliste combinant tirs et coups avec son bras mécanique.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/26/Winter_Soldier_DEFAULT_Table_Icon.png",
+      "note": 0
+    },
+    {
+      "id": 37,
+      "nom": "Wolverine",
+      "role": "Dégâts",
+      "equipements": [],
       "description": "Un duelliste régénérant tailladant avec ses griffes indestructibles.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Wolverine_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Wolverine_DEFAULT_Table_Icon.png"
+      "points": 1
     }
   ],
   "equipements": [

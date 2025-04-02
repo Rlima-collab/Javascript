@@ -11,12 +11,19 @@ export class Personnage {
     this.note = note;
   }
 
-static async fetchAll() {
+  static async fetchAll() {
     const response = await fetch(`${ENDPOINT}/personnages`);
     const data = await response.json();
-    return data.map(item => new Personnage(item.id, item.nom, item.role, item.equipements, item.description, item.image, item.note));
-}
-
+    return data.map(item => new Personnage(
+      parseInt(item.id, 10), // Convertir l'id en nombre
+      item.nom,
+      item.role,
+      item.equipements,
+      item.description,
+      item.image,
+      item.note
+    ));
+  }
   static async fetchById(id) {
     const response = await fetch(`${ENDPOINT}/personnages/${id}`);
     const data = await response.json();

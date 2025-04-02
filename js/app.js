@@ -1,6 +1,8 @@
 import { renderListe } from './views/liste.js';
 import { renderDetail } from './views/detail.js';
 import { renderFavoris } from './views/favoris.js';
+import { renderCombat } from './views/combat.js';
+import { renderClassement } from './views/classement.js';
 
 const content = document.getElementById('content');
 
@@ -39,16 +41,20 @@ function renderHome() {
 function router() {
     const hash = window.location.hash || '#home';
     if (hash === '#home') {
-        renderHome();
+      renderHome();
     } else if (hash === '#liste') {
-        renderListe(content);
+      renderListe(content);
     } else if (hash.startsWith('#detail/')) {
-        const id = hash.split('/')[1];
-        renderDetail(content, id);
+      const id = hash.split('/')[1];
+      renderDetail(content, id);
     } else if (hash === '#favoris') {
-        renderFavoris(content);
+      renderFavoris(content);
+    } else if (hash === '#combat') {
+      renderCombat(content);
+    } else if (hash === '#classement') {
+      renderClassement(content);
     }
-}
+  }
 
 function loadYouTubePlayer() {
     if (!window.YT || !window.YT.Player) {
