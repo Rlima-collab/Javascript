@@ -6,9 +6,6 @@ export function renderDetail(content, id) {
     Personnage.fetchById(id),
     fetch(`${ENDPOINT}/equipements`).then(res => res.json()) // Récupération des équipements
   ]).then(([p, equipements]) => {
-    console.log('Personnage:', p); // Vérifiez les données du personnage
-    console.log('Équipements récupérés:', equipements); // Vérifiez les équipements récupérés
-
     if (!equipements || !Array.isArray(equipements)) {
       console.error('Les équipements ne sont pas disponibles ou ont un format incorrect.');
       content.innerHTML = `<p>Impossible de charger les équipements.</p>`;
@@ -21,9 +18,7 @@ export function renderDetail(content, id) {
     // Associer les noms des équipements
     const equipementNoms = p.equipements
       .map(equipId => {
-        const equip = equipements.find(e => e.id === equipId); // Comparaison stricte
-        console.log(equip);
-        console.log(`Recherche équipement ID ${equipId}:`, equip); // Vérifiez chaque correspondance
+        const equip = equipements.find(e => e.id === equipId); // Trouver l'équipement correspondant
         return equip ? equip.nom : 'Inconnu';
       })
       .join(', ');
@@ -47,15 +42,10 @@ export function renderDetail(content, id) {
 
     const saveNote = () => {
       let note = document.getElementById('newNote').value;
-      if (note > 5) {
-      note = 5;
-      } else if (note < 0) {
-      note = 0;
-      }
-      console.log('Nouvelle note:', note);
+      note = Math.max(0, Math.min(5, note)); // Limiter la note entre 0 et 5
       Personnage.updateNote(id, note).then(() => {
-      document.getElementById('note').textContent = note;
-      document.getElementById('newNote').value = '';
+        document.getElementById('note').textContent = note;
+        document.getElementById('newNote').value = '';
       });
     };
 
@@ -63,7 +53,7 @@ export function renderDetail(content, id) {
 
     document.getElementById('newNote').addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
-      saveNote();
+        saveNote();
       }
     });
 
