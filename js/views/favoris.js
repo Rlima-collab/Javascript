@@ -1,7 +1,7 @@
 import { Personnage } from '../provider.js';
 
 export function renderFavoris(content) {
-  const favoris = JSON.parse(localStorage.getItem('favoris') || '[]');
+  const favoris = JSON.parse(localStorage.getItem('favoris') || '[]').map(id => parseInt(id, 10));
   Personnage.fetchAll().then(personnages => {
     let favPersos = personnages.filter(p => favoris.includes(p.id));
     let filteredPersonnages = [...favPersos];

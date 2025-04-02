@@ -20,13 +20,11 @@ export function renderDetail(content, id) {
 
     // Associer les noms des équipements
     const equipementNoms = p.equipements
-      .map(equipId => {
-        const equip = equipements.find(e => e.id === equipId); // Comparaison stricte
-        console.log(equip);
-        console.log(`Recherche équipement ID ${equipId}:`, equip); // Vérifiez chaque correspondance
-        return equip ? equip.nom : 'Inconnu';
-      })
-      .join(', ');
+    .map(equipId => {
+      const equip = equipements.find(e => parseInt(e.id, 10) === equipId); // Correction ici
+      return equip ? equip.nom : 'Inconnu';
+    })
+    .join(', ');
 
     content.innerHTML = `
       <div class="detail">
@@ -35,12 +33,16 @@ export function renderDetail(content, id) {
         <p><strong>Rôle:</strong> ${p.role}</p>
         <p><strong>Description:</strong> ${p.description}</p>
         <p><strong>Équipements:</strong> ${equipementNoms || 'Aucun'}</p>
-        <p><strong>Note:</strong> <span id="note">${p.note}</span>/5</p>
-        <input type="number" id="newNote" min="0" max="5" value="${p.note}">
-        <button id="save">Noter</button>
-        <button id="fav">${isFav ? 'Retirer des favoris' : 'Ajouter aux favoris'}</button>
+        <p><strong>Points:</strong> ${p.points}</p>
+        <p><strong>Combats:</strong> ${p.combats}</p>
+        <p><strong>Note:</strong> <span id="note" class="note-display">${p.note}</span>/5</p>
+        <div class="note-input">
+          <input type="number" id="newNote" min="0" max="5" value="${p.note}">
+          <button id="save" class="btn btn-primary">Noter</button>
+        </div>
+        <button id="fav" class="btn btn-primary">${isFav ? 'Retirer des favoris' : 'Ajouter aux favoris'}</button>
         <div class="detail-footer">
-          <a href="#liste">Retour à la liste</a>
+          <a href="#liste" class="btn btn-primary">Retour à la liste</a>
         </div>
       </div>
     `;
