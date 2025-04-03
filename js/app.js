@@ -23,9 +23,9 @@ function renderHome() {
                     <h3>Où acheter Marvel Rivals ?</h3>
                     <p>Marvel Rivals est disponible sur les plateformes suivantes :</p>
                     <ul>
-                        <li><a href="https://store.playstation.com" target="_blank">PlayStation Store</a></li>
-                        <li><a href="https://www.microsoft.com/store" target="_blank">Microsoft Store</a></li>
-                        <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
+                        <li><a href="https://store.playstation.com/fr-fr/concept/10010451" target="_blank">PlayStation Store</a></li>
+                        <li><a href="https://www.xbox.com/fr-fr/games/store/marvel-rivals/9n8pmw7qmd3d" target="_blank">Microsoft Store</a></li>
+                        <li><a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank">Steam</a></li>
                     </ul>
                 </div>
                 <div class="buy-image">

@@ -4,17 +4,24 @@
       "id": "1",
       "nom": "Adam Warlock",
       "role": "Soins",
-      "equipements": [],
+      "equipements": [
+        1,
+        2,
+        3
+      ],
       "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png",
       "note": 5,
+
       "points": 9,
       "combats": 11
+
     },
     {
       "id": "2",
       "nom": "Black Panther",
       "role": "Dégâts",
+
       "equipements": [
         2,
         3,
@@ -25,6 +32,7 @@
       "note": 0,
       "points": 24,
       "combats": 11
+
     },
     {
       "id": "3",
