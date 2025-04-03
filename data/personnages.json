@@ -4,25 +4,25 @@
       "id": "1",
       "nom": "Adam Warlock",
       "role": "Soins",
-      "equipements": [],
-      "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques.",
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png",
-      "note": 5,
-      "points": 0
-    },
-    {
-      "id": "2",
-      "nom": "Black Panther",
-      "role": "Dégâts",
       "equipements": [
         1,
         2,
         3
       ],
+      "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png",
+      "note": 5,
+      "points": 3
+    },
+    {
+      "id": "2",
+      "nom": "Black Panther",
+      "role": "Dégâts",
+      "equipements": [],
       "description": "Le roi de Wakanda, rapide et mortel au combat rapproché avec ses griffes.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/ba/Black_Panther_DEFAULT_Table_Icon.png",
       "note": 0,
-      "points": 3
+      "points": 0
     },
     {
       "id": "3",
@@ -377,7 +377,7 @@
       "note": 0
     },
     {
-      "id": 37,
+      "id": "37",
       "nom": "Wolverine",
       "role": "Dégâts",
       "equipements": [],
