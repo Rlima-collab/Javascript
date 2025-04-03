@@ -2,8 +2,12 @@ import { Personnage } from '../provider.js';
 
 export function renderFavoris(content) {
   const favoris = JSON.parse(localStorage.getItem('favoris') || '[]');
+  console.log('Favoris dans localStorage :', favoris); // Vérifiez les favoris
+
   Personnage.fetchAll().then(personnages => {
-    let favPersos = personnages.filter(p => favoris.includes(p.id));
+    let favPersos = personnages.filter(p => favoris.includes(String(p.id)));
+    console.log('Personnages favoris filtrés :', favPersos); // Vérifiez les personnages favoris
+
     let filteredPersonnages = [...favPersos];
     let isSortedAsc = true;
 
@@ -71,5 +75,8 @@ export function renderFavoris(content) {
     });
 
     renderFilteredList();
+  }).catch(error => {
+    console.error('Erreur lors du chargement des personnages pour les favoris :', error);
+    content.innerHTML = `<p>Une erreur est survenue lors du chargement des favoris.</p>`;
   });
 }
