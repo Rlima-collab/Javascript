@@ -2,30 +2,34 @@ import { Personnage } from '../provider.js';
 import { ENDPOINT } from '../config.js';
 
 export function renderDetail(content, id) {
+  // Récupération des données du personnage et des équipements en parallèle
   Promise.all([
-    Personnage.fetchById(id),
-    fetch(`${ENDPOINT}/equipements`).then(res => res.json()) // Récupération des équipements
+    Personnage.fetchById(id), // Récupérer les détails du personnage par son ID
+    fetch(`${ENDPOINT}/equipements`).then(res => res.json()) // Récupérer la liste des équipements
   ]).then(([p, equipements]) => {
-    console.log('Personnage:', p); // Vérifiez les données du personnage
-    console.log('Équipements récupérés:', equipements); // Vérifiez les équipements récupérés
+    console.log('Personnage:', p); // Vérifiez les données du personnage dans la console
+    console.log('Équipements récupérés:', equipements); // Vérifiez les équipements récupérés dans la console
 
+    // Vérification si les équipements sont disponibles et valides
     if (!equipements || !Array.isArray(equipements)) {
       console.error('Les équipements ne sont pas disponibles ou ont un format incorrect.');
       content.innerHTML = `<p>Impossible de charger les équipements.</p>`;
       return;
     }
 
+    // Gestion des favoris : récupération depuis le localStorage
     const favoris = JSON.parse(localStorage.getItem('favoris') || '[]');
-    const isFav = favoris.includes(p.id);
+    const isFav = favoris.includes(p.id); // Vérifie si le personnage est dans les favoris
 
-    // Associer les noms des équipements
+    // Associer les noms des équipements au personnage
     const equipementNoms = p.equipements
-    .map(equipId => {
-      const equip = equipements.find(e => parseInt(e.id, 10) === equipId); // Correction ici
-      return equip ? equip.nom : 'Inconnu';
-    })
-    .join(', ');
+      .map(equipId => {
+        const equip = equipements.find(e => parseInt(e.id, 10) === equipId); // Trouver l'équipement correspondant
+        return equip ? equip.nom : 'Inconnu'; // Si l'équipement n'est pas trouvé, afficher "Inconnu"
+      })
+      .join(', ');
 
+    // Génération du contenu HTML pour afficher les détails du personnage
     content.innerHTML = `
       <div class="detail">
         <h2>${p.nom}</h2>
@@ -48,37 +52,43 @@ export function renderDetail(content, id) {
     `;
 
     const saveNote = () => {
-      let note = document.getElementById('newNote').value;
+      let note = document.getElementById('newNote').value; // Récupérer la nouvelle note
       if (note > 5) {
-      note = 5;
+        note = 5; // Limiter la note à 5
       } else if (note < 0) {
-      note = 0;
+        note = 0; // Limiter la note à 0
       }
       console.log('Nouvelle note:', note);
       Personnage.updateNote(id, note).then(() => {
-      document.getElementById('note').textContent = note;
-      document.getElementById('newNote').value = '';
+        document.getElementById('note').textContent = note; // Mettre à jour l'affichage de la note
+        document.getElementById('newNote').value = ''; // Réinitialiser le champ de saisie
       });
     };
 
+    // Gestion du clic sur le bouton "Noter"
     document.getElementById('save').addEventListener('click', saveNote);
 
+    // Gestion de la saisie avec la touche "Entrée" pour sauvegarder la note
     document.getElementById('newNote').addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
-      saveNote();
+        saveNote();
       }
     });
 
+    // Gestion du clic sur le bouton "Ajouter/Retirer des favoris"
     document.getElementById('fav').addEventListener('click', () => {
       if (isFav) {
+        // Retirer des favoris
         localStorage.setItem('favoris', JSON.stringify(favoris.filter(f => f !== p.id)));
       } else {
+        // Ajouter aux favoris
         favoris.push(p.id);
         localStorage.setItem('favoris', JSON.stringify(favoris));
       }
-      renderDetail(content, id);
+      renderDetail(content, id); // Recharger les détails pour mettre à jour l'état du bouton
     });
   }).catch(error => {
+    // Gestion des erreurs lors de la récupération des données
     console.error('Erreur lors de la récupération des données :', error);
     content.innerHTML = `<p>Une erreur est survenue lors du chargement des détails.</p>`;
   });
