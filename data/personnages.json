@@ -12,17 +12,27 @@
       "description": "Un stratège cosmique qui soigne ses alliés et peut les ressusciter avec ses pouvoirs mystiques.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/dd/Adam_Warlock_DEFAULT_Table_Icon.png",
       "note": 5,
-      "points": 3
+
+      "points": 9,
+      "combats": 11
+
     },
     {
       "id": "2",
       "nom": "Black Panther",
       "role": "Dégâts",
-      "equipements": [],
+
+      "equipements": [
+        2,
+        3,
+        1
+      ],
       "description": "Le roi de Wakanda, rapide et mortel au combat rapproché avec ses griffes.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/ba/Black_Panther_DEFAULT_Table_Icon.png",
       "note": 0,
-      "points": 0
+      "points": 24,
+      "combats": 11
+
     },
     {
       "id": "3",
@@ -32,9 +42,15 @@
         4,
         5
       ],
+      "equipementInitial": [
+        4,
+        5
+      ],
       "description": "Une tireuse d’élite agile utilisant un grappin pour se déplacer et éliminer à distance.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/c/c8/Black_Widow_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/c/c8/Black_Widow_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "4",
@@ -43,9 +59,14 @@
       "equipements": [
         6
       ],
+      "equipementInitial": [
+        6
+      ],
       "description": "Un tank transformable qui passe de Banner à Hulk pour écraser ses ennemis.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/5f/Hulk_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/5f/Hulk_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "5",
@@ -54,9 +75,14 @@
       "equipements": [
         7
       ],
+      "equipementInitial": [
+        7
+      ],
       "description": "Un vanguard protecteur lançant son bouclier et absorbant les dégâts pour son équipe.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/d3/Captain_America_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/d3/Captain_America_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "6",
@@ -65,9 +91,14 @@
       "equipements": [
         8
       ],
+      "equipementInitial": [
+        8
+      ],
       "description": "Un duo stratège qui soigne et contrôle avec lumière et ténèbres.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/d4/Cloak_%26_Dagger_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/d/d4/Cloak_%26_Dagger_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "7",
@@ -76,18 +107,26 @@
       "equipements": [
         9
       ],
+      "equipementInitial": [
+        9
+      ],
       "description": "Sorcier suprême utilisant portails et boucliers pour défendre et attaquer.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/1d/Doctor_Strange_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/1d/Doctor_Strange_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "8",
       "nom": "Groot",
       "role": "Tank",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un vanguard végétal créant des murs pour protéger ses alliés.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/50/Groot_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/50/Groot_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "9",
@@ -96,9 +135,14 @@
       "equipements": [
         10
       ],
+      "equipementInitial": [
+        10
+      ],
       "description": "Un duelliste précis tirant des flèches spéciales à distance.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/a/a7/Hawkeye_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/a/a7/Hawkeye_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "10",
@@ -107,36 +151,50 @@
       "equipements": [
         11
       ],
+      "equipementInitial": [
+        11
+      ],
       "description": "Une stratège mortelle invoquant des corbeaux et ressuscitant ses alliés.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/7/70/Hela_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/7/70/Hela_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "11",
       "nom": "Human Torch",
       "role": "Dégâts",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un duelliste enflammé lançant des boules de feu et volant rapidement.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/f/f3/Human_Torch_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/f/f3/Human_Torch_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "12",
       "nom": "Invisible Woman",
       "role": "Soins",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Une stratège créant des boucliers invisibles et contrôlant les ennemis.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/3/39/Invisible_Woman_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/3/39/Invisible_Woman_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "13",
       "nom": "Iron Fist",
       "role": "Dégâts",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un duelliste martial frappant avec le Poing d’Acier.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/1e/Iron_Fist_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/1e/Iron_Fist_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "14",
@@ -145,18 +203,26 @@
       "equipements": [
         12
       ],
+      "equipementInitial": [
+        12
+      ],
       "description": "Un duelliste volant lançant rayons et missiles depuis son armure.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/b8/Iron_Man_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/b/b8/Iron_Man_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "15",
       "nom": "Jeff the Land Shark",
       "role": "Soins",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un stratège adorable qui crache de l’eau pour soigner et attaquer.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/00/Jeff_the_Land_Shark_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/00/Jeff_the_Land_Shark_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "16",
@@ -165,18 +231,26 @@
       "equipements": [
         28
       ],
+      "equipementInitial": [
+        28
+      ],
       "description": "Un stratège rusé utilisant illusions et téléportation pour aider son équipe.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/3/38/Loki_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/3/38/Loki_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "17",
       "nom": "Luna Snow",
       "role": "Soins",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Une stratège glaciale qui soigne et gèle les ennemis avec ses pouvoirs.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/2b/Luna_Snow_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/2b/Luna_Snow_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "18",
@@ -185,36 +259,50 @@
       "equipements": [
         27
       ],
+      "equipementInitial": [
+        27
+      ],
       "description": "Une duelliste téléportée tranchant avec son épée démoniaque.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/0d/Magik_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/0d/Magik_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "19",
       "nom": "Magneto",
       "role": "Tank",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un vanguard manipulant le métal pour protéger et attaquer.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/28/Magneto_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/28/Magneto_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "20",
       "nom": "Mantis",
       "role": "Soins",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Une stratège empathique soignant et endormant avec ses pouvoirs psychiques.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/59/Mantis_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/59/Mantis_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "21",
       "nom": "Mister Fantastic",
       "role": "Dégâts",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un duelliste élastique absorbant les dégâts et frappant de loin.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/8e/Mister_Fantastic_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/8e/Mister_Fantastic_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "22",
@@ -223,9 +311,14 @@
       "equipements": [
         13
       ],
+      "equipementInitial": [
+        13
+      ],
       "description": "Un duelliste mobile lançant des projectiles en forme de lune.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/9/9c/Moon_Knight_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/9/9c/Moon_Knight_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "23",
@@ -234,9 +327,14 @@
       "equipements": [
         14
       ],
+      "equipementInitial": [
+        14
+      ],
       "description": "Un duelliste aquatique chargeant avec son trident et posant des tourelles.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/18/Namor_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/18/Namor_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "24",
@@ -245,9 +343,14 @@
       "equipements": [
         15
       ],
+      "equipementInitial": [
+        15
+      ],
       "description": "Un vanguard en mech utilisant des toiles pour contrôler le champ de bataille.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/c/ce/Peni_Parker_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/c/ce/Peni_Parker_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "25",
@@ -256,9 +359,14 @@
       "equipements": [
         16
       ],
+      "equipementInitial": [
+        16
+      ],
       "description": "Une duelliste ninja tranchant avec une lame d’énergie psychique.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/16/Psylocke_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/1/16/Psylocke_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "26",
@@ -268,9 +376,15 @@
         17,
         18
       ],
+      "equipementInitial": [
+        17,
+        18
+      ],
       "description": "Un duelliste tirant à distance et posant des tourelles mortelles.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/02/The_Punisher_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/0/02/The_Punisher_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "27",
@@ -279,18 +393,26 @@
       "equipements": [
         19
       ],
+      "equipementInitial": [
+        19
+      ],
       "description": "Un stratège explosif soutenant avec gadgets et soins légers.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/53/Rocket_Raccoon_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/5/53/Rocket_Raccoon_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "28",
       "nom": "Scarlet Witch",
       "role": "Dégâts",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Une duelliste lançant des sorts chaotiques dévastateurs.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/7/77/Scarlet_Witch_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/7/77/Scarlet_Witch_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "29",
@@ -299,9 +421,14 @@
       "equipements": [
         20
       ],
+      "equipementInitial": [
+        20
+      ],
       "description": "Un duelliste agile se balançant et piégeant avec ses toiles.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/9/90/Spider-Man_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/9/90/Spider-Man_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "30",
@@ -310,38 +437,49 @@
       "equipements": [
         21
       ],
+      "equipementInitial": [
+        21
+      ],
       "description": "Une duelliste invoquant des écureuils et tirant avec un lance-pierre.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/85/Squirrel_Girl_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/85/Squirrel_Girl_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "31",
       "nom": "Star-Lord",
       "role": "Dégâts",
-      "equipements": [
-        22
-      ],
+      "equipements": [],
       "description": "Un duelliste volant tirant avec ses pistolets élémentaux.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/86/Star-Lord_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/86/Star-Lord_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 1
     },
     {
       "id": "32",
       "nom": "Storm",
       "role": "Dégâts",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Une duelliste contrôlant la météo pour attaquer et soutenir.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Storm_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Storm_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "33",
       "nom": "The Thing",
       "role": "Tank",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un vanguard robuste frappant fort et résistant aux coups.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/60/The_Thing_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/60/The_Thing_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "34",
@@ -350,18 +488,26 @@
       "equipements": [
         23
       ],
+      "equipementInitial": [
+        23
+      ],
       "description": "Un vanguard lançant son marteau et des éclairs pour dominer.",
-      "note": "4",
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/88/Thor_DEFAULT_Table_Icon.png"
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/8/88/Thor_DEFAULT_Table_Icon.png",
+      "note": 4,
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "35",
       "nom": "Venom",
       "role": "Tank",
       "equipements": [],
+      "equipementInitial": [],
       "description": "Un vanguard symbiotique utilisant des tentacules pour contrôler.",
+      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/4/42/Venom_DEFAULT_Table_Icon.png",
       "note": 0,
-      "image": "https://static.wikia.nocookie.net/marvel-rivals/images/4/42/Venom_DEFAULT_Table_Icon.png"
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "36",
@@ -369,162 +515,171 @@
       "role": "Dégâts",
       "equipements": [
         24,
-        25,
-        26
+        25
+      ],
+      "equipementInitial": [
+        24,
+        25
       ],
       "description": "Un duelliste combinant tirs et coups avec son bras mécanique.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/2/26/Winter_Soldier_DEFAULT_Table_Icon.png",
-      "note": 0
+      "note": 0,
+      "points": 0,
+      "combats": 0
     },
     {
       "id": "37",
       "nom": "Wolverine",
       "role": "Dégâts",
-      "equipements": [],
+      "equipements": [
+        26,
+        22
+      ],
       "description": "Un duelliste régénérant tailladant avec ses griffes indestructibles.",
       "image": "https://static.wikia.nocookie.net/marvel-rivals/images/6/69/Wolverine_DEFAULT_Table_Icon.png",
       "note": 0,
-      "points": 1
+      "points": 4,
+      "combats": 1
     }
   ],
   "equipements": [
     {
-      "id": 1,
+      "id": "1",
       "nom": "Bâton Quantique",
       "type": "arme"
     },
     {
-      "id": 2,
+      "id": "2",
       "nom": "Griffes en Vibranium",
       "type": "arme"
     },
     {
-      "id": 3,
+      "id": "3",
       "nom": "Lance Dora Milaje",
       "type": "arme"
     },
     {
-      "id": 4,
+      "id": "4",
       "nom": "Fusil de sniper",
       "type": "arme"
     },
     {
-      "id": 5,
+      "id": "5",
       "nom": "Bâtons électriques",
       "type": "arme"
     },
     {
-      "id": 6,
+      "id": "6",
       "nom": "Pistolet à rayons gamma",
       "type": "arme"
     },
     {
-      "id": 7,
+      "id": "7",
       "nom": "Bouclier",
       "type": "défense"
     },
     {
-      "id": 8,
+      "id": "8",
       "nom": "Dagues de lumière",
       "type": "arme"
     },
     {
-      "id": 9,
+      "id": "9",
       "nom": "Cape de Lévitation",
       "type": "défense"
     },
     {
-      "id": 10,
+      "id": "10",
       "nom": "Arc et flèches",
       "type": "arme"
     },
     {
-      "id": 11,
+      "id": "11",
       "nom": "Épées de Nastrond",
       "type": "arme"
     },
     {
-      "id": 12,
+      "id": "12",
       "nom": "Armure Mark VII",
       "type": "défense"
     },
     {
-      "id": 13,
+      "id": "13",
       "nom": "Croissants de lune",
       "type": "arme"
     },
     {
-      "id": 14,
+      "id": "14",
       "nom": "Trident",
       "type": "arme"
     },
     {
-      "id": 15,
+      "id": "15",
       "nom": "SP//dr Mech",
       "type": "défense"
     },
     {
-      "id": 16,
+      "id": "16",
       "nom": "Lame psychique",
       "type": "arme"
     },
     {
-      "id": 17,
+      "id": "17",
       "nom": "Fusil",
       "type": "arme"
     },
     {
-      "id": 18,
+      "id": "18",
       "nom": "Tourelle",
       "type": "arme"
     },
     {
-      "id": 19,
+      "id": "19",
       "nom": "Armes lourdes",
       "type": "arme"
     },
     {
-      "id": 20,
+      "id": "20",
       "nom": "Toiles",
       "type": "arme"
     },
     {
-      "id": 21,
+      "id": "21",
       "nom": "Lance-pierre",
       "type": "arme"
     },
     {
-      "id": 22,
+      "id": "22",
       "nom": "Pistolets élémentaux",
       "type": "arme"
     },
     {
-      "id": 23,
+      "id": "23",
       "nom": "Mjolnir",
       "type": "arme"
     },
     {
-      "id": 24,
+      "id": "24",
       "nom": "Bras cybernétique",
       "type": "arme"
     },
     {
-      "id": 25,
+      "id": "25",
       "nom": "Pistolet",
       "type": "arme"
     },
     {
-      "id": 26,
+      "id": "26",
       "nom": "Griffes en adamantium",
       "type": "arme"
     },
     {
-      "id": 27,
+      "id": "27",
       "nom": "Soulsword",
       "type": "arme"
     },
     {
-      "id": 28,
+      "id": "28",
       "nom": "Dague",
       "type": "arme"
     }

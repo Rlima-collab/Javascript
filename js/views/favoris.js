@@ -1,8 +1,10 @@
 import { Personnage } from '../provider.js';
 
 export function renderFavoris(content) {
+
   const favoris = JSON.parse(localStorage.getItem('favoris') || '[]');
   console.log('Favoris dans localStorage :', favoris); // Vérifiez les favoris
+
 
   Personnage.fetchAll().then(personnages => {
     let favPersos = personnages.filter(p => favoris.includes(String(p.id)));
